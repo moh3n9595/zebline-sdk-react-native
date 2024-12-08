@@ -1,0 +1,31 @@
+{
+  "name": "example",
+  "version": "0.12.0",
+  "private": true,
+  "dependencies": {
+    "@react-native/metro-config": "*",
+    "@testing-library/jest-native": "*",
+    "@testing-library/react-native": "*",
+    "react": "*",
+    "react-native": "*",
+    "react-native-svg": "*",
+    "metro-config": "*",
+    "@react-native-async-storage/async-storage": "*",
+    "@rudderstack/rudder-sdk-react-native": "*",
+    "@rudderstack/rudder-plugin-db-encryption-react-native": "*",
+    "@rudderstack/rudder-integration-amplitude-react-native": "*",
+    "@rudderstack/rudder-integration-appcenter-react-native": "*",
+    "@rudderstack/rudder-integration-appsflyer-react-native": "*",
+    "@rudderstack/rudder-integration-braze-react-native": "*",
+    "@rudderstack/rudder-integration-clevertap-react-native": "*",
+    "@rudderstack/rudder-integration-facebook-react-native": "*",
+    "@rudderstack/rudder-integration-firebase-react-native": "*",
+    "@rudderstack/rudder-integration-moengage-react-native": "*",
+    "@rudderstack/rudder-integration-singular-react-native": "*",
+    "react-native-config": "*",
+    "async-lock": "*"
+  },
+  "overrides": {
+    "unset-value": "2.0.1"
+  }
+}

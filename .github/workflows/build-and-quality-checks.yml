@@ -1,0 +1,44 @@
+name: Build & Code Quality Checks
+
+on:
+  pull_request:
+    branches: ['develop', 'master']
+    types: ['opened', 'reopened', 'synchronize']
+
+jobs:
+  build:
+    name: Build & Code Quality Checks
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'zulu'
+          java-version: '17'
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: '.nvmrc'
+          cache: 'npm'
+
+      - name: Install node_modules
+        env:
+          HUSKY: 0
+        run: |
+          npm run setup:ci
+
+      - name: Execute security checks
+        run: |
+          npm run check:security
+
+      - name: Bundle apps
+        run: |
+          npm run bundle:ci

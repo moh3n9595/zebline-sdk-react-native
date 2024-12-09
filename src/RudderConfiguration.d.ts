@@ -1,0 +1,2 @@
+import { Configuration } from './NativeBridge';
+export declare const configure: (writeKey: string, { dataPlaneUrl, controlPlaneUrl, flushQueueSize, dbCountThreshold, sleepTimeOut, logLevel, autoSessionTracking, sessionTimeout, enableBackgroundMode, configRefreshInterval, autoCollectAdvertId, trackAppLifecycleEvents, recordScreenViews, collectDeviceId, enableGzip, dbEncryption, withFactories, }: Configuration) => Promise<Configuration>;

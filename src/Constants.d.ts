@@ -1,0 +1,16 @@
+export declare const DATA_PLANE_URL = "https://hosted.rudderlabs.com";
+export declare const CONTROL_PLANE_URL = "https://api.rudderlabs.com";
+export declare const FLUSH_QUEUE_SIZE = 30;
+export declare const DB_COUNT_THRESHOLD = 10000;
+export declare const SLEEP_TIMEOUT = 10;
+export declare const CONFIG_REFRESH_INTERVAL = 2;
+export declare const AUTO_COLLECT_ADVERT_ID = false;
+export declare const TRACK_LIFECYCLE_EVENTS = true;
+export declare const RECORD_SCREEN_VIEWS = false;
+export declare const LOG_LEVEL: number;
+export declare const SDK_VERSION = "1.15.0";
+export declare const AUTO_SESSION_TRACKING = true;
+export declare const SESSION_TIMEOUT = 300000;
+export declare const ENABLE_BACKGROUND_MODE = false;
+export declare const COLLECT_DEVICE_ID = true;
+export declare const ENABLE_GZIP = true;
